@@ -1,38 +1,172 @@
-.App {
+.form {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+input,
+button,
+select,
+label,
+textarea {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+}
+
+input[type="button"],
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+textarea {
+  outline: 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-ltblue {
+  color: #005b96;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.w-100 {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
   align-items: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-basis-100 {
+  flex-basis: 100%;
+}
+
+.form-control-inline input,
+.form-control-inline label {
+  display: inline;
+}
+
+.form-inline-radio p {
+  min-width: 330px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+#intensity div {
+  flex-grow: 1;
+}
+
+#intensity div input[type="radio"] {
+  margin: 0;
+  display: inline-block;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem auto;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons button,
+.buttons input[type="submit"],
+.buttons a {
+  min-width: 150px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  outline: none;
+  border: solid 1px #005b96;
+  background-color: #005b96;
+  color: #ffffff;
+  border-radius: 0.3rem;
+  transition: 0.2s ease-in;
+  appearance: button;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  text-decoration: none;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons button:hover,
+.buttons input[type="submit"]:hover,
+.buttons a:hover {
+  border: solid 1px #013e66;
+  background-color: #013e66;
+}
+
+.summary {
+  overflow-x: auto;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: solid 1px #d4d4d4;
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  vertical-align: middle;
 }
